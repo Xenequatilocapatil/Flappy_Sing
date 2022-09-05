@@ -44,3 +44,14 @@ Here's a list of the set of intervals.
 Easy Mode: unison, maj/min 2nd and 3rd, perfect 4th and 5th, octave. 
 Normal Mode: unison, maj/min 2nd and 3rd, perfect 4th and 5th, octave, maj 6th and 7th.
 Hard Mode:  unison, maj/min 2nd and 3rd, perfect 4th and 5th, octave, maj/min 6th and 7th, tritone.
+
+# OPTIONS
+
+<img src="./Options.PNG"/>
+
+Here are two additional options in case you want to modify your gaming experience.
+Guided Start plays a pure tone at the beginning of the song in order to have a reference pitch. This option is selected by default.
+Disable Collision simply unables the obstacle collision, letting you play nonstop. This feature was mainly used for debugging purpose but it was left there in case the user wants to just keep playing without retrying.
+
+
+
