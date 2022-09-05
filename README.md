@@ -1,5 +1,5 @@
 # Flappy Sing
-<img src="./Intro.png" style="height: 70px; width:400px;"/>
+<img src="./Intro.PNG"/>
 
 Are you a very bad singer, like us ? 
 Do you want to improve your singing while having fun ?
@@ -12,7 +12,7 @@ Of course you'll need to use your voice, so make sure you have one.
 
 # HOW TO PLAY
 
-<img src="./Gameplay.png" style="height: 70px; width:400px;"/>
+<img src="./Gameplay.png"/>
 
 The cicada will follow your voice guidance, the more in tune you are the smoothest the cicada will pass the obstacle. 
 The notes that you need to sing are shown on the screen. 
@@ -23,14 +23,14 @@ Make sure you start singing before the obstacle reaches the cicada, since it doe
 
 You can choose between two different modes: Song and Random. 
 
-<img src="./Mainmenu.png" style="height: 70px; width:400px;"/>
+<img src="./Mainmenu.PNG"/>
 
 
 when in Song mode you can choose from different existing songs and sing along. 
-<img src="./Songmode.png" style="height: 70px; width:400px;"/>
+<img src="./Songmode.PNG"/>
 
 In Random mode you'll have different choices, choose beetween: Easy, Normal, Hard, Speed freak and Perfect pitch. 
-<img src="./Randommode.png" style="height: 70px; width:400px;"/>
+<img src="./Randommode.PNG"/>
 
 The Random mode isn't completely randomic: you'll have to face a different set of musical intervals depending on the difficulty. 
 
