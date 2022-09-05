@@ -1,0 +1,552 @@
+
+#option{
+    background-image: url(option3.png);
+    background-size: 100% 100%;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#option:hover{
+    width: 90px;
+    height: 90px;
+    top: 10px;
+    right: 15px;
+}
+
+#back{
+    background-image: url(Back3.png);
+    background-size: 100% 100%;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#back:hover{
+    width: 90px;
+    height: 90px;
+    top: 10px;
+    left: 15px;
+}
+
+#home{
+    background-image: url(home_button.png);
+    background-size: 100% 100%;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 130px;
+    left: 335px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    opacity: 0.8;
+}
+
+#home:hover{
+    width: 100px;
+    height: 100px;
+    top: 120px;
+    left: 325px;
+    opacity: 1;
+}
+
+#retry{
+    background-image: url(retry_button.png);
+    background-size: 100% 100%;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 141px;
+    left: 435px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    opacity: 0.8;
+}
+
+#retry:hover{
+    width: 80px;
+    height: 80px;
+    top: 134px;
+    left: 432px;
+    opacity: 1;
+}
+
+#quit{
+    background-image: url(quit_button.png);
+    background-size: 100% 100%;
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    width: 80px;
+    height: 60px;
+    bottom: 50px;
+    right: 23px;
+}
+
+#quit:hover{
+    width: 90px;
+    height: 68px;
+    bottom: 46px;
+    right: 18px;
+}
+
+#song{
+    background-image: url(song.png);
+    background-size: 100% 100%;
+    width: 400px;
+    height: 120px;
+    position: absolute;
+    cursor: pointer;
+    left: calc(50% - 500px);
+    top: 400px;
+    transition-duration: 0.4s;
+}
+
+#song:hover{
+    width: 440px;
+    height: 140px;
+    top: 390px;
+    left: calc(50% - 520px);
+}
+
+#random{
+    background-image: url(random.png);
+    background-size: 100% 100%;
+    width: 400px;
+    height: 120px;
+    position: absolute;
+    cursor: pointer;
+    left: calc(50% + 100px);
+    top: 400px;
+    transition-duration: 0.4s;
+}
+
+#random:hover{
+    width: 440px;
+    height: 140px;
+    top: 390px;
+    left: calc(50% + 80px);
+}
+
+#framartino_btn{
+    background-image: url(FraMartino_btn.png);
+    background-size: 100% 100%;
+    width: 350px;
+    height: 100px;
+    position: absolute;
+    cursor: pointer;
+    left: calc(50% - 200px);
+    top: 250px;
+    transition-duration: 0.4s;
+}
+
+#framartino_btn:hover{
+    width: 380px;
+    height: 120px;
+    top: 240px;
+    left: calc(50% - 215px);
+}
+
+#perelisa_btn{
+    background-image: url(PerElisa_btn.png);
+    background-size: 100% 100%;
+    width: 350px;
+    height: 100px;
+    position: absolute;
+    cursor: pointer;
+    left: calc(50% - 200px);
+    top: 370px;
+    transition-duration: 0.4s;
+}
+
+#perelisa_btn:hover{
+    width: 380px;
+    height: 120px;
+    top: 360px;
+    left: calc(50% - 215px);
+}
+
+#halo_btn{
+    background-image: url(Halo_btn.png);
+    background-size: 100% 100%;
+    width: 350px;
+    height: 100px;
+    position: absolute;
+    cursor: pointer;
+    left: calc(50% - 200px);
+    top: 490px;
+    transition-duration: 0.4s;
+}
+
+#halo_btn:hover{
+    width: 380px;
+    height: 120px;
+    top: 480px;
+    left: calc(50% - 215px);
+}
+
+#easy_btn{
+    background-image: url(Easy_btn.png);
+    background-size: 100% 100%;
+    width: 350px;
+    height: 100px;
+    position: absolute;
+    cursor: pointer;
+    left: calc(50% - 200px);
+    top: 170px;
+    transition-duration: 0.4s;
+}
+
+#easy_btn:hover{
+    width: 380px;
+    height: 120px;
+    top: 160px;
+    left: calc(50% - 215px);
+}
+
+#normal_btn{
+    background-image: url(Normal_btn.png);
+    background-size: 100% 100%;
+    width: 350px;
+    height: 100px;
+    position: absolute;
+    cursor: pointer;
+    left: calc(50% - 200px);
+    top: 270px;
+    transition-duration: 0.4s;
+}
+
+#normal_btn:hover{
+    width: 380px;
+    height: 120px;
+    top: 260px;
+    left: calc(50% - 215px);
+}
+
+#hard_btn{
+    background-image: url(Hard_btn.png);
+    background-size: 100% 100%;
+    width: 350px;
+    height: 100px;
+    position: absolute;
+    cursor: pointer;
+    left: calc(50% - 200px);
+    top: 370px;
+    transition-duration: 0.4s;
+}
+
+#hard_btn:hover{
+    width: 380px;
+    height: 120px;
+    top: 360px;
+    left: calc(50% - 215px);
+}
+
+#speedfreak_btn{
+    background-image: url(SpeedFreak_btn.png);
+    background-size: 100% 100%;
+    width: 350px;
+    height: 100px;
+    position: absolute;
+    cursor: pointer;
+    left: calc(50% - 200px);
+    top: 470px;
+    transition-duration: 0.4s;
+}
+
+#speedfreak_btn:hover{
+    width: 380px;
+    height: 120px;
+    top: 460px;
+    left: calc(50% - 215px);
+}
+
+#perfectpitch_btn{
+    background-image: url(PerfectPitch_btn.png);
+    background-size: 100% 100%;
+    width: 350px;
+    height: 100px;
+    position: absolute;
+    cursor: pointer;
+    left: calc(50% - 200px);
+    top: 570px;
+    transition-duration: 0.4s;
+}
+
+#perfectpitch_btn:hover{
+    width: 380px;
+    height: 120px;
+    top: 560px;
+    left: calc(50% - 215px);
+}
+
+/* --------------------CHECKMARKS PER OPTION MENU'------------------------ */
+
+.container {
+    display: block;
+    position: relative;
+    margin-top: 150px;
+    margin-left: 30%;
+    cursor: pointer;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: rgb(216, 158, 50);
+    text-shadow: black 0 0 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: -5px;
+    left: -100px;
+    height: 80px;
+    width: 80px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: rgb(216, 158, 50);
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    top: 30px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(43, 59, 75);
+  }
+
+/* --------------------IMMAGINI E TITOLI------------------------ */
+
+#score_2{
+    text-decoration: solid;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: rgb(216, 158, 50);
+    text-shadow: black 0 0 20px;
+    font-weight: 500;
+}
+
+#plant{
+    background-image: url(carnivorous_plant.png);
+    background-size: 100% 100%;
+    width: 330px;
+    height: 450px;
+    position: absolute;
+    top: -109px;
+    left: 500px;
+    opacity: 0;
+}
+
+#cicada1 {
+    width: 110px;
+    height: 110px;
+    background-image: url(Cicada.png);
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 256px;
+    left: calc(100% - 110px);
+    opacity: 0;
+}
+
+#cicada2 {
+    width: 80px;
+    height: 80px;
+    background-image: url(Cicada.png);
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 256px;
+    left: calc(100% - 80px);
+    opacity: 0;
+}
+
+#cicada3 {
+    width: 60px;
+    height: 60px;
+    background-image: url(Cicada.png);
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 256px;
+    left: calc(100% - 60px);
+    opacity: 0;
+}  
+
+#carnivorous {
+    width: 250px;
+    height: 342px;
+    background-image: url(carnivorous_plant.png);
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: calc(50% - 171px);
+    left: calc(100% - 250px);
+    opacity: 0;
+}
+
+#flappy_sing_title{
+    background-image: url(title.png);
+    background-size: 100% 100%;
+    width: 1500px;
+    height: 300px;
+    left: calc(50% - 750px);
+    top: 20px;
+    position: absolute;
+}
+
+#choose_song{
+    background-image: url(choose_song.png);
+    background-size: 100% 100%;
+    width: 1400px;
+    height: 200px;
+    left: calc(50% - 700px);
+    top: 20px;
+    position: absolute;
+}
+
+#choose_difficulty{
+    background-image: url(choose_difficulty.png);
+    background-size: 100% 100%;
+    width: 1400px;
+    height: 200px;
+    left: calc(50% - 670px);
+    top: 20px;
+    position: absolute;
+}
+
+/* ----------------------------ANIMAZIONI---------------------- */
+
+@keyframes scrolling {
+    0% {width:0px;}
+    25% {width:0px;}
+    75% {width:850px;}
+    100% {width:850px;}
+}
+
+@keyframes scrollButtonHome {
+    0% {left:0px; width:0px; height: 0px;}
+    25% {left:0px; width:0px; height: 0px;}
+    75% {left:335px; width:80px; height: 80px;}
+    100% {left:335px; width:80px; height: 80px;}
+}
+
+@keyframes scrollButtonRetry {
+    0% {left:0px; width:0px; height: 0px;}
+    25% {left:0px; width:0px; height: 0px;}
+    75% {left:435px; width: 70px; height: 70px;}
+    100% {left:435px; width: 70px; height: 70px;}
+}
+
+@keyframes scrollTitle {
+    0%{font-size: 0px;}
+    25%{font-size: 0px;}
+    75%{font-size: 50px;}
+    100%{font-size: 50px;}
+}
+
+@keyframes animPlant {
+    0%{left: -445px;opacity :1;}
+    25%{left:-20px;}
+    50%{opacity:1}
+    75%{left:810px;}
+    100%{left:830px; opacity:0;} 
+}
+
+@keyframes anim_cic1 {
+    0%{left:calc(0%); opacity: 1; bottom: 256px;}
+    10%{left:calc(10%); opacity: 1; bottom: 156px;}
+    20%{left:calc(20%); opacity: 1; bottom: 56px;}
+    30%{left:calc(30%); opacity: 1; bottom: 156px;}
+    40%{left:calc(40%); opacity: 1; bottom: 256px;}
+    50%{left:calc(50%); opacity: 1; bottom: 356px;}
+    60%{left:calc(60%); opacity: 1; bottom: 456px;}
+    70%{left:calc(70%); opacity: 1; bottom: 356px;}
+    80%{left:calc(80%); opacity: 1; bottom: 256px;}
+    90%{left:calc(90%); opacity: 1; bottom: 156px;}
+    100%{left:calc(100% - 110px); opacity: 0; bottom: 265px;}
+}
+
+@keyframes anim_cic2 {
+    0%{left:calc(0%); opacity: 1; bottom: 500px;}
+    10%{left:calc(10%); opacity: 1; bottom: 400px;}
+    20%{left:calc(20%); opacity: 1; bottom: 300px;}
+    30%{left:calc(30%); opacity: 1; bottom: 200px;}
+    40%{left:calc(40%); opacity: 1; bottom: 100px;}
+    50%{left:calc(50%); opacity: 1; bottom: 200px;}
+    60%{left:calc(60%); opacity: 1; bottom: 300px;}
+    70%{left:calc(70%); opacity: 1; bottom: 400px;}
+    80%{left:calc(80%); opacity: 1; bottom: 500px;}
+    90%{left:calc(90%); opacity: 1; bottom: 600px;}
+    100%{left:calc(100% - 80px); opacity: 0; bottom: 500px;}
+}
+
+@keyframes anim_cic3 {
+    0%{left:calc(0%); opacity: 1; bottom: 100px;}
+    10%{left:calc(9%); opacity: 1; bottom: 200px;}
+    20%{left:calc(18%); opacity: 1; bottom: 300px;}
+    30%{left:calc(27%); opacity: 1; bottom: 400px;}
+    40%{left:calc(36%); opacity: 1; bottom: 500px;}
+    50%{left:calc(45%); opacity: 1; bottom: 600px;}
+    60%{left:calc(54%); opacity: 1; bottom: 500px;}
+    70%{left:calc(63%); opacity: 1; bottom: 400px;}
+    80%{left:calc(72%); opacity: 1; bottom: 300px;}
+    90%{left:calc(81%); opacity: 1; bottom: 200px;}
+    100%{left:calc(100% - 60px); opacity: 0; bottom: 300px;}
+}
+
+@keyframes anim_carnivorous {
+    0%{left:-200px; opacity: 1; bottom: calc(50% - 171px);}
+    10%{left:calc(-5%); opacity: 1; bottom: calc(50% - 201px);}
+    20%{left:calc(5%); opacity: 1; bottom: calc(50% - 231px);}
+    30%{left:calc(15%); opacity: 1; bottom: calc(50% - 261px);}
+    40%{left:calc(25%); opacity: 1; bottom: calc(50% - 231px);}
+    50%{left:calc(35%); opacity: 1; bottom: calc(50% - 201px);}
+    60%{left:calc(45%); opacity: 1; bottom: calc(50% - 171px);}
+    70%{left:calc(55%); opacity: 1; bottom: calc(50% - 141px);}
+    80%{left:calc(65%); opacity: 1; bottom: calc(50% - 111px);}
+    90%{left:calc(75%); opacity: 1; bottom: calc(50% - 141px);}
+    100%{left:calc(100% - 250px); opacity: 0; bottom: calc(50% - 171px);}
+}
+
+@keyframes fade_in {
+    0%{opacity: 0;}
+    90%{opacity: 0;}
+    100%{opacity: 1;}
+}
