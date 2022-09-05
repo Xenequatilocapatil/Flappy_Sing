@@ -1,5 +1,5 @@
 # Flappy Sing
-<img src="./Intro.png"/>
+<img src="./Intro.PNG"/>
 
 Are you a very bad singer, like us ? 
 Do you want to improve your singing while having fun ?
