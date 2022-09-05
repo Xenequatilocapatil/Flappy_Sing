@@ -47,7 +47,7 @@ Hard Mode:  unison, maj/min 2nd and 3rd, perfect 4th and 5th, octave, maj/min 6t
 
 # OPTIONS
 
-<img src="./Options.png"/>
+<img src="./Options.jpg"/>
 
 Here are two additional options in case you want to modify your gaming experience.
 Guided Start plays a pure tone at the beginning of the song in order to have a reference pitch. This option is selected by default.
