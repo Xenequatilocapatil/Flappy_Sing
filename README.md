@@ -23,14 +23,14 @@ Make sure you start singing before the obstacle reaches the cicada, since it doe
 
 You can choose between two different modes: Song and Random. 
 
-<img src="./Mainmenu.png"/>
+<img src="./Mainmenu.PNG"/>
 
 
 when in Song mode you can choose from different existing songs and sing along. 
-<img src="./Songmode.png"/>
+<img src="./Songmode.PNG"/>
 
 In Random mode you'll have different choices, choose beetween: Easy, Normal, Hard, Speed freak and Perfect pitch. 
-<img src="./Randommode.png"/>
+<img src="./Randommode.PNG"/>
 
 The Random mode isn't completely randomic: you'll have to face a different set of musical intervals depending on the difficulty. 
 
