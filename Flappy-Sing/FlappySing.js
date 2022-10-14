@@ -46,6 +46,11 @@ let guidedStart = true;
 let max_gain = 0.3;
 let checkbox_disable_collision = null;
 let checkbox_guided_start = null;
+let toohigh = null;
+let toolow = null;
+let notrec = null;
+let game = null;
+let indicators = null;
 
 
 //Pitch guiding
@@ -53,6 +58,7 @@ let pitchGuiding = false; //activation flag
 let oscStorage = null; //global oscillator node variable
 let gainStorage = null; //global gain node variable
 let pitch1 = null; 
+let pitch2 = null;
 
 //PARAMETRI
 const maxFreq = 622.25;//D#5
@@ -109,6 +115,11 @@ random_btn = document.getElementById("random");
 option_btn = document.getElementById("option");
 checkbox_disable_collision = document.getElementById('disable_collision');
 checkbox_guided_start = document.getElementById('guided_start');
+toohigh = document.getElementById('toohigh');
+toolow = document.getElementById('toolow');
+notrec = document.getElementById('notrec');
+game = document.getElementById('game');
+indicators = document.getElementById('indicators');
 
 //Autocorrelation algorithm
 function autoCorrelate(buf, sampleRate) {
@@ -326,11 +337,11 @@ function GenerationObstacle(song, mode){
 
 function GenerationObstacle2(song, mode){
 	if (mode){
-		GenerationHoleRandom(ObB2Elem, ObT2Elem, targetNote2Elem);
+		pitch2 = GenerationHoleRandom(ObB2Elem, ObT2Elem, targetNote2Elem);
 		oscStop();
 	}else{
 		ObVel = song[0];
-		GenerationHoleSeries(ObB2Elem, ObT2Elem, song, targetNote2Elem);
+		pitch2 = GenerationHoleSeries(ObB2Elem, ObT2Elem, song, targetNote2Elem);
 		oscStop();
 	}
 }
@@ -436,6 +447,11 @@ function updatePitch() {//it also update the character y position
 		freqElem.innerHTML = "--Hz";
 		charElem.style.transition = "bottom " + charFallVelocity +  "s";
 		charElem.style.bottom = 0;
+		if(indicators.style.display == 'block'){
+			toggleScreen('toolow', false);
+			toggleScreen('toohigh', false);
+			toggleScreen('notrec', true);
+		}
     }else{
         let note =  noteFromPitch( pitch );
 		freqElem.innerHTML = Math.round(pitch) + "Hz";
@@ -443,6 +459,8 @@ function updatePitch() {//it also update the character y position
 		let buff1 = Math.min(pitchCor, maxPitch)-Math.log10(98);
 		let buff2 = maxPitch - Math.log10(98);
 		let consistencySamples = 3;
+		toggleScreen('notrec', false);
+		
 
 		for (let i=0; i<consistencySamples; i++){
 			if(Math.abs(oldBuff[consistencySamples-1-i] - buff1) < 0.02){
@@ -458,7 +476,48 @@ function updatePitch() {//it also update the character y position
 			charElem.style.bottom =  buff1/buff2 * (canvasHeight-charHeight) + 25 + "px";
 			noteElem.innerHTML = noteStrings[note%12];
 			allowMovement = 0;
-			
+
+			let ObstacleTLeft = parseInt(window.getComputedStyle(ObTElem).getPropertyValue("left"));
+			let ObstacleT2Left = parseInt(window.getComputedStyle(ObT2Elem).getPropertyValue("left"));
+		
+		
+			if(ObstacleTLeft > 160 && ObstacleTLeft < 420){
+				if(pitch > (pitch1*1.13)){
+					toggleScreen('toohigh', true);
+					toggleScreen('toolow', false);
+					toggleScreen('notrec', false);
+					
+				}
+				else if(pitch < (pitch1/1.13)){
+					toggleScreen('toolow', true);
+					toggleScreen('toohigh', false);
+					toggleScreen('notrec', false);
+				}
+				else{
+					toggleScreen('toolow', false);
+					toggleScreen('toohigh', false);
+					toggleScreen('notrec', false);
+				}
+				
+			}
+			if(ObstacleT2Left > 160 && ObstacleT2Left < 420){
+				if(pitch > (pitch2*1.13)){
+					toggleScreen('toohigh', true);
+					toggleScreen('toolow', false);
+					toggleScreen('notrec', false);
+				}
+				else if(pitch < (pitch2/1.3)){
+					toggleScreen('toolow', true);
+					toggleScreen('toohigh', false);
+					toggleScreen('notrec', false);
+				}
+				else{
+					toggleScreen('toolow', false);
+					toggleScreen('toohigh', false);
+					toggleScreen('notrec', false);
+				}
+			}	
+
 		}
 		if(oldBuff.length == consistencySamples){
 			oldBuff.shift();
@@ -558,6 +617,7 @@ function toStartingScreen(){
 	toggleScreen('song-screen',false);
 	toggleScreen('diff-screen',false);
 	toggleScreen('starting-screen',false);
+	toggleScreen('notrec', false);
 
 	if(!collisionDetection){
 		toggleScreen('quit', true);
@@ -580,6 +640,7 @@ function toMainMenu(){
 	toggleScreen('diff-screen',false);
 	toggleScreen('starting-screen',true);
 	toggleScreen('quit', false);
+	toggleScreen('notrec', false);
 	cicada1.style.animation = 'anim_cic1 2s linear';
 	cicada2.style.animation = 'anim_cic2 2s linear';
 	cicada3.style.animation = 'anim_cic3 2s linear';
@@ -600,6 +661,7 @@ function toOptionsMenu(){
 	toggleScreen('diff-screen',false);
 	toggleScreen('starting-screen',false);
 	toggleScreen('quit', false);
+	toggleScreen('notrec', false);
 }
 
 function toGameOverMenu(){
@@ -612,6 +674,10 @@ function toGameOverMenu(){
 	toggleScreen('diff-screen',false);
 	toggleScreen('starting-screen',false);
 	toggleScreen('quit', false);
+	toggleScreen('notrec', false);
+	toggleScreen('toolow', false);
+	toggleScreen('toohigh', false);
+
 	gameover.style.animation = 'scrolling 1.5s linear';
 	home.style.animation = 'scrollButtonHome 1.5s linear';
 	retry.style.animation = 'scrollButtonRetry 1.5s linear';
@@ -634,6 +700,7 @@ function toModeMenu(){
 	toggleScreen('diff-screen',false);
 	toggleScreen('starting-screen',false);
 	toggleScreen('quit', false);
+	toggleScreen('notrec', false);
 }
 function toDiffMenu(){
 	toggleScreen('gameover',false);
@@ -645,6 +712,7 @@ function toDiffMenu(){
 	toggleScreen('diff-screen',true);
 	toggleScreen('starting-screen',false);
 	toggleScreen('quit', false);
+	toggleScreen('notrec', false);
 }
 
 function toSongMenu(){
@@ -657,6 +725,7 @@ function toSongMenu(){
 	toggleScreen('diff-screen',false);
 	toggleScreen('starting-screen',false);
 	toggleScreen('quit', false);
+	toggleScreen('notrec', false);
 }
 
 

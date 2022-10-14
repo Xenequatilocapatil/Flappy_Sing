@@ -288,6 +288,35 @@
     left: calc(50% - 215px);
 }
 
+#toohigh{
+    background-image: url(images/toohigh.png);
+    background-size: 100% 100%;
+    position: absolute;
+    width: 280px;
+    height: 100px;
+    top: 140px;
+    left: 20px;
+}
+
+#toolow{
+    background-image: url(images/toolow.png);
+    background-size: 100% 100%;
+    position: absolute;
+    width: 280px;
+    height: 100px;
+    top: 480px;
+    left: 20px;
+}
+#notrec{
+    background-image: url(images/notrec.png);
+    background-size: 100% 100%;
+    position: absolute;
+    width: 280px;
+    height: 160px;
+    top: 300px;
+    left: 20px;
+}
+
 /* --------------------CHECKMARKS PER OPTION MENU'------------------------ */
 
 .container {
