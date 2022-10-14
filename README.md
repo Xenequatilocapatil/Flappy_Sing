@@ -59,6 +59,6 @@ The signal coming from your microphone is at first filtered in order to optimize
 The signal is periodically stored into a buffer and from that it is analyzed, retrieving its fundamental frequency using an autocorrelation algorithm.
 Finally, before outputing the detected frequency, a consistency check is performed, meaning that the values of peaks that are close in time must be similar, otherwise the detection is invalid. This means that the algorithm will take benefit from long, sustained notes rather than sparse, fast pitch changes.
 These operations keep going forever until the page is closed. While in game the note will be displayed on the top left corner, both in pitch and frequency.
-<img src="./pitch_top.PNG"/>
+<img src="./pitch_top.png"/>
 
  
