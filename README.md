@@ -58,9 +58,15 @@ The signal coming from your microphone is at first filtered in order to optimize
 <img src="./mic_analyzer.PNG"/>
 The signal is periodically stored into a buffer and from that it is analyzed, retrieving its fundamental frequency using the pitch detection algorithm.
 Before outputing the detected frequency, a consistency check is performed, meaning that the values of subsequent detected frequencies must be similar, otherwise the detection is invalid. This means that the algorithm will take benefit from long, sustained notes rather than sparse, fast pitch changes.
-These operations keep going forever until the page is closed. While in game the note will be displayed on the top left corner, both in pitch and frequency.
+These operations keep going forever until the page is closed.
+While in game the note will be displayed on the top left corner, both in pitch and frequency.
 
 <img src="./pitch_top.png"/>
+
+Additionally, a visual feedback is displayed on the left part of the screen depending on the reference note inside the obstacle.
+There are three cases:
+<img src="./pitch_top.png"/> <img src="./pitch_top.png"/> <img src="./pitch_top.png"/>
+Instead, when the pitch is correct, nothing is displayed.
  
 # PITCH DETECTION
 Let's have a look at the insigth of the pitch detection algorithm.
