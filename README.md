@@ -65,7 +65,7 @@ While in game the note will be displayed on the top left corner, both in pitch a
 
 Additionally, a visual feedback is displayed on the left part of the screen depending on the reference note inside the obstacle.
 There are three cases:
-<img src="./pitch_top.png"/> <img src="./pitch_top.png"/> <img src="./pitch_top.png"/>
+<img src="./too_high.png"/> <img src="./too_low.png"/> <img src="./not_recognized.png"/>
 Instead, when the pitch is correct, nothing is displayed.
  
 # PITCH DETECTION
