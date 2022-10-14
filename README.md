@@ -53,5 +53,14 @@ Here are two additional options in case you want to modify your gaming experienc
 Guided Start plays a pure tone at the beginning of the song in order to have a reference pitch. This option is selected by default.
 Disable Collision simply unables the obstacle collision, letting you play nonstop. This feature was mainly used for debugging purpose but it was left there in case the user wants to just keep playing without retrying.
 
+# HOW DOES IT WORK
+The signal coming from your microphone [...] -> filtering -> analysis
+Note on top left, always active.
+
+
+# PITCH DETECTION
+Let's have a look at the insigth of the pitch detection algorithm. First, the input signal is stored in a buffer and an STFT is performed. Then, for each STFT window, the maximum peak of the spectrum is detected using a parabolic interpolator which fits a parabola through the highest three samples of a peak to estimate the true peak location and height. Finally, before outputing the detected frequency, a consistency check is performed, meaning that the values of peaks that are close in time must be similar, otherwise the detection is invalid. Inside the whole STFT operation, zero-padding will increase the accuracy of the simple peak detection. The method use for estimating peak frequency is a cross-correlation between the whole STFT window transform and the entire spectrum, taking an interpolated peak location in the cross-correlation function as the frequency estimate.
+
+ 
 
 
